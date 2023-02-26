@@ -57,7 +57,13 @@ public class UserController {
 		if (user.getUsername().equals("bucunzai")){
 			map.put("status", 1);
 			map.put("message", "登陆失败，用户名不存在！");
-		} else if (user.getUsername().equals("error")) {
+		} else if (user.getUsername().equals("add001")) {
+			map.put("status", 1);
+			map.put("message", "登陆失败，密码错误！" + user.getUsername());
+		}else if (user.getUsername().equals("add002")) {
+			map.put("status", 1);
+			map.put("message", "登陆失败，密码错误！" + user.getUsername());
+		}else if (user.getUsername().equals("error")) {
 			map.put("status", 1);
 			map.put("message", "登陆失败，密码错误！");
 		}else{
